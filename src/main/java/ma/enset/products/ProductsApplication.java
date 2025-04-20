@@ -33,8 +33,11 @@ public class ProductsApplication implements CommandLineRunner {
 //    System.out.println(p.getPrice());
 //    System.out.println(p.getQuantity());
 //    System.out.println("************");
-
-
+//
+        System.out.println("--------------------");
+        List<Product> productList = productRepository.findByNameContains("Comp");
+        productList.forEach(p-> System.out.println(p));
+        System.out.println("--------------------");
 
     }
 }
