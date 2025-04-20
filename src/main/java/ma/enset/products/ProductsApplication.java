@@ -19,13 +19,22 @@ public class ProductsApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-    productRepository.save(new Product(null, "Computer", 4300, 3));
-    productRepository.save(new Product(null, "Phone", 1200, 10));
-    productRepository.save(new Product(null, "Tablet", 2500, 5));
 
+
+        /*******  Ajouter des patients  ********/
+//    productRepository.save(new Product(null, "Computer", 4300, 3));
+//    productRepository.save(new Product(null, "Phone", 1200, 10));
+//    productRepository.save(new Product(null, "Tablet", 2500, 5));
+
+
+
+    /*******   Consulter tous les patients      ******/
 //    List<Product> productList = productRepository.findAll();
 //    productList.forEach(p -> System.out.println(p) );
 
+
+
+        /*******   Consulter un les patient      ******/
 //    Product p = productRepository.findById(1L).get();
 //    System.out.println("************");
 //    System.out.println(p.getId());
@@ -34,6 +43,8 @@ public class ProductsApplication implements CommandLineRunner {
 //    System.out.println(p.getQuantity());
 //    System.out.println("************");
 //
+
+        /*******   chercher  des patients      ******/
 //        System.out.println("--------------------");
 //        List<Product> productList1 = productRepository.findByNameContains("Comp");
 //        productList1.forEach(p-> System.out.println(p));
@@ -44,6 +55,11 @@ public class ProductsApplication implements CommandLineRunner {
 //        List<Product>  productList3 = productRepository.findByPriceBetween(1000,2000);
 //        productList3.forEach(p -> System.out.println(p));
 
+
+        /*******   supprimer des patients      ******/
+//        productRepository.deleteById(1L);
+//        productRepository.deleteById(2L);
+//        productRepository.deleteById(3L);
 
     }
 }
