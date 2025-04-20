@@ -26,13 +26,15 @@ public class ProductsApplication implements CommandLineRunner {
 //    List<Product> productList = productRepository.findAll();
 //    productList.forEach(p -> System.out.println(p) );
 
-    Product p = productRepository.findById(1L).get();
-    System.out.println("************");
-    System.out.println(p.getId());
-    System.out.println(p.getName());
-    System.out.println(p.getPrice());
-    System.out.println(p.getQuantity());
-    System.out.println("************");
+//    Product p = productRepository.findById(1L).get();
+//    System.out.println("************");
+//    System.out.println(p.getId());
+//    System.out.println(p.getName());
+//    System.out.println(p.getPrice());
+//    System.out.println(p.getQuantity());
+//    System.out.println("************");
+
+
 
     }
 }
