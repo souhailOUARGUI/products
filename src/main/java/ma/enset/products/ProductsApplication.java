@@ -41,8 +41,8 @@ public class ProductsApplication implements CommandLineRunner {
 //        List<Product> productList2 = productRepository.search("%P%");
 //        productList2.forEach(p-> System.out.println(p));
 
-        List<Product>  productList3 = productRepository.findByPriceBetween(1000,2000);
-        productList3.forEach(p -> System.out.println(p));
+//        List<Product>  productList3 = productRepository.findByPriceBetween(1000,2000);
+//        productList3.forEach(p -> System.out.println(p));
 
 
     }
